@@ -6,8 +6,8 @@ typedef struct complex{
 complex findsum(int n){
   int i,real[n],imag[n];complex num;
   for(i=0;i<n;i++){
-   int j=i+1;
-   printf("enter real and complex part of number respectively:",j);
+   
+   printf("enter real and complex part of number respectively:");
    scanf("%d %d",&real[i],&imag[i]);
    num.real+=real[i];
    num.imag+=imag[i];
