@@ -5,11 +5,7 @@ struct complex
   float real;
   float imaginary;
 };
-struct roots
-{
-  struct complex r1;
-  struct complex r2;
-};
+
 int findroots(float a,float b,float c,struct complex *r1,struct complex *r2)
 {
   if(a==0)
