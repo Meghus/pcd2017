@@ -1,8 +1,8 @@
 #include<stdio.h>
-float compute_poly(int n,float a[10],int X)
+float compute_poly(int n,float a[],int X)
 {
   float sum=0;int i;
-  for(i=n;i>0;i--)
+  for(i=n;i>=0;i--)
   {
     sum=(sum + a[i])*X;
   }
@@ -30,7 +30,7 @@ int main()
   {
     printf("invalid degree of polynomial");
   }
-  sum=compute_poly(n,&a[i],X);
+  sum=compute_poly(n,a,X);
   printf("The sum = %f",sum);
   return 0;
 }
