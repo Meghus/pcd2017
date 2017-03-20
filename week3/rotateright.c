@@ -1,13 +1,13 @@
 #include<stdio.h>
-int rotateright(int n,int x)
+unsigned int rotateright(unsigned int n,unsigned int x)
 {
   n=n%(sizeof(int)*8);
-  int l=(sizeof(int)*8)-n;
+  unsigned int l=(sizeof(int)*8)-n;
   return x>>n|x<<l;
 }
-int main()
+unsigned int main()
 {
-  int x,n,newno;
+  unsigned int x,n,newno;
   printf("enter the number");
   scanf("%d",&x);
   printf("enter the number of rotations");
